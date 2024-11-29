@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register - Travel Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="text-center">Register</h2>
+    <form action="register_user" method="POST">
+      <!-- Common Fields -->
+      <div class="form-group">
+        <label for="userType">Register as:</label>
+        <select class="form-control" id="userType" name="userType">
+          <option value="traveller">Traveller</option>
+          <option value="agency">Travel Agency</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="name">Full Name / Agency Name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+      </div>
+      <!-- Additional fields can be added based on user type -->
+      <div class="form-group">
+        <label for="email">Email address:</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Password:</label>
+        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd" required>
+      </div>
+      <button type="submit" class="btn btn-success btn-block" ><a href="login.html" style="text-decoration: none;">Register</a></button>
+      <p class="text-center mt-3">Already have an account? <a href="login.html">Login here</a></p>
+    </form>
+  </div>
+</body>
+</html>
