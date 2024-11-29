@@ -1,0 +1,187 @@
+/* Base styles */
+:root {
+    --primary-green: #4A7153;
+    --light-beige: #F7E9E3;
+    --light-peach: #F7C59F;
+    --accent-orange: #FF6B1A;
+}
+
+body {
+    background-color: var(--light-beige);
+    color: #333;
+}
+
+/* Navigation */
+.navbar {
+    background-color: var(--primary-green);
+    padding: 1rem 2rem;
+}
+
+.navbar a {
+    color: var(--light-beige);
+}
+
+.nav-links li a:hover {
+    color: var(--light-peach);
+}
+
+/* Carousel */
+.carousel-text {
+    background-color: rgba(74, 113, 83, 0.8); /* semi-transparent green */
+    color: var(--light-beige);
+}
+
+/* Booking Form */
+.booking-form {
+    background-color: var(--light-peach);
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.submit-btn {
+    background-color: var(--accent-orange);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #e55f16;
+}
+
+/* Banner Section */
+.banner-section {
+    background-color: var(--primary-green);
+    color: var(--light-beige);
+}
+
+.signup-btn {
+    background-color: var(--accent-orange);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+    background-color: #e55f16;
+}
+
+/* Cards */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.btn {
+    background-color: var(--accent-orange);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #e55f16;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-green);
+    color: var(--light-beige);
+    padding: 3rem 0 1rem;
+}
+
+.footer-column h3 {
+    color: var(--light-peach);
+}
+
+.footer-column a {
+    color: var(--light-beige);
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    color: var(--light-peach);
+}
+
+/* Chat Widget */
+#chat-icon {
+    background-color: var(--accent-orange);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+#chat-box {
+    border: 2px solid var(--primary-green);
+    border-radius: 8px;
+}
+
+#chat-header {
+    background-color: var(--primary-green);
+    color: var(--light-beige);
+}
+
+#send-btn {
+    background-color: var(--accent-orange);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+/* Additional Styling */
+h2 {
+    color: var(--primary-green);
+}
+
+input[type="date"],
+select {
+    border: 2px solid var(--light-peach);
+    border-radius: 4px;
+    padding: 8px;
+}
+
+input[type="date"]:focus,
+select:focus {
+    border-color: var(--accent-orange);
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem;
+    }
+    
+    .menu-icon {
+        color: var(--light-beige);
+    }
+    
+    .nav-links {
+        background-color: var(--primary-green);
+    }
+}

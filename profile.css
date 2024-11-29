@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.dashboard-container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.sidebar-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-nav ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li.active a {
+    color: #0068ff;
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+.header {
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #777;
+}
+
+/* Profile Section */
+#profile-details p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.btn {
+    background-color: #0068ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+#profile-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-form label,
+#profile-form input {
+    margin-bottom: 10px;
+}
+
+#profile-form input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Tabs */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .package-cards {
+        flex-direction: column;
+    }
+
+    .package-card {
+        width: 100%;
+    }
+}

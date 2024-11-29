@@ -1,0 +1,92 @@
+/* Container for the travel spots */
+.travel-spot-container {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.travel-spot-container h1 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #333;
+}
+/*Language Toogle*/
+.lang-toggle {
+    position: fixed;
+    top: 90px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #00A47E;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Card container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Travel spot card */
+.travel-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.travel-card:hover {
+    transform: scale(1.05);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-content h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.card-content p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.card-content button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-content button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .travel-spot-container {
+        padding: 20px;
+    }
+
+    .travel-card {
+        margin-bottom: 20px;
+    }
+}

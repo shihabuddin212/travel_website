@@ -1,0 +1,51 @@
+.payment-section {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#payment-element {
+    margin-bottom: 24px;
+}
+
+#payment-message {
+    color: rgb(105, 115, 134);
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+#payment-element {
+    margin-bottom: 24px;
+}
+
+/* Spinner/Processing state */
+.spinner,
+.spinner:before,
+.spinner:after {
+    border-radius: 50%;
+}
+
+.spinner {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 2px solid #ffffff;
+    border-right-color: transparent;
+    animation: spinner-rotation 1s linear infinite;
+}
+
+@keyframes spinner-rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    display: none;
+} 

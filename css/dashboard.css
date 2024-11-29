@@ -1,0 +1,139 @@
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #45a049;
+    --text-color: #333;
+    --sidebar-width: 250px;
+    --header-height: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f4f6f8;
+    color: var(--text-color);
+}
+
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background: #f8f9fa;
+}
+
+.dashboard-sidebar {
+    width: 250px;
+    background: #2c3e50;
+    color: #fff;
+    padding: 20px 0;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.brand {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 20px;
+}
+
+.brand h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-link i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+}
+
+.dashboard-main {
+    flex: 1;
+    margin-left: 250px;
+    padding: 20px;
+}
+
+.top-bar {
+    background: #fff;
+    padding: 15px 20px;
+    margin: -20px -20px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logout-btn {
+    color: #dc3545;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #6c757d;
+}
+
+.error-message {
+    text-align: center;
+    padding: 40px;
+    color: #dc3545;
+}
+
+.error-message i {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .dashboard-sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .dashboard-main {
+        margin-left: 0;
+    }
+
+    .dashboard-container {
+        flex-direction: column;
+    }
+}
+ 
